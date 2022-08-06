@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.h4-judul {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  display: flex;
+}
+
+.media::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+.media::-webkit-scrollbar-track {
+  border-radius: 5px;
+  /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.media::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: blue;
+}
+
+.media {
+  position: relative;
+  overflow: auto;
+  height: 500px;
+  display: flex;
+}
+
+.txt {
+  float: right;
+  width: 20%;
+}
+
+.img {
+  float: left;
+  gap: 10px;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.img .img1 {
+  min-width: 40%;
+  width: 200px;
+  background-image: url(denmark/denmark-city.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+.img .img2 {
+  min-width: 40%;
+
+  width: 200px;
+  background-image: url(sweden/sweden-city-1.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+.img .img3 {
+  min-width: 40%;
+
+  width: 200px;
+  background-image: url(norway/norway-city-2.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+.tes-text {
+  min-width: 30%;
+}
+
+.tes {
+  display: inline-block;
+  position: relative;
+  animation: load 2s infinite ease;
+  width: 200px;
+  height: 200px;
+}
+
+.p-shade {
+  color: #8a8a8a;
+}
+/* .loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 550px;
+  bottom: 250px;
+  position: absolute;
+} */
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preload {
+  overflow: hidden;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+/* .loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+} */
+/* .loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+ */
+/* @keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+} */
